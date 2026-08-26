@@ -20,4 +20,4 @@ dist-ssr/
 .DS_Store
 .idea/
 *.log
-.cursor2/
+.cursor/
