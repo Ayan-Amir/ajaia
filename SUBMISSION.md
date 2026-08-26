@@ -2,16 +2,18 @@
 
 **Candidate:** Ayyan Amir (ayyanamir6@gmail.com)
 
-> Items marked **[FILL IN]** need your input before you submit.
+All links below are live and were verified end to end.
 
 ## Links
 
 | Item | Link |
 | --- | --- |
 | Live product URL | https://ajaia-tau.vercel.app |
+| Source code (GitHub) | https://github.com/Ayan-Amir/ajaia |
 | Backend API | https://ajaia-docs-api-production.up.railway.app |
-| Walkthrough video | **[FILL IN]** — unlisted Loom/YouTube link (also in `VIDEO.txt`) |
-| Google Drive folder | **[FILL IN]** — folder containing all of this |
+| Walkthrough video — part 1 | https://www.loom.com/share/d298db6c1f104f46813f670dbe5f66a7 |
+| Walkthrough video — part 2 | https://www.loom.com/share/6f5de69f588347c8ae8266384206ccf4 |
+| Google Drive (`ajaia.zip`) | https://drive.google.com/file/d/1LwcTYyOLyqFkR7M7bJ_9ZWCvYgn4OA6a/view?usp=sharing |
 
 ## Test accounts
 
@@ -39,7 +41,7 @@ window → confirm the document is read-only and the Share button is absent.
 | `frontend/` | React + TypeScript + Tiptap client |
 | `DEPLOYMENT.md` | Step-by-step Neon + Railway + Vercel deployment guide |
 | `backend/railway.json`, `frontend/vercel.json` | Deployment configuration |
-| `VIDEO.txt` | **[FILL IN]** walkthrough video URL |
+| `VIDEO.txt` | Walkthrough video URLs |
 | `screenshots/` | Screenshots of the main flows |
 
 ## Status

@@ -1,10 +1,23 @@
-Walkthrough video (3-5 min): [FILL IN — unlisted Loom or YouTube link]
+Walkthrough video — Ajaia Docs
+Ayyan Amir (ayyanamir6@gmail.com)
 
-Suggested outline:
-  0:00  What it is + the seeded-account sign-in model
-  0:30  Create a document, rename it, apply formatting, show autosave
-  1:15  Import a .md file and show it become an editable document
-  1:45  Share with another user (view vs. edit), show the access list
-  2:15  Sign in as that user: shared-vs-owned split, read-only enforcement
-  3:00  What I deprioritized and why (real-time collab, version history)
-  3:45  How AI supported the work — including the 3 bugs browser testing caught
+Recorded in two parts (unlisted Loom):
+
+  Part 1: https://www.loom.com/share/d298db6c1f104f46813f670dbe5f66a7
+  Part 2: https://www.loom.com/share/6f5de69f588347c8ae8266384206ccf4
+
+Covered across the two parts:
+  - Main user flow: sign in, create, rename, rich-text edit, autosave, reopen
+  - File import (.txt / .md / .docx) into a new editable document
+  - Sharing: granting view vs. edit access, and read-only enforcement for a viewer
+  - What was intentionally deprioritized and why
+  - Key implementation decisions
+  - How AI supported the workflow
+
+Live app:  https://ajaia-tau.vercel.app
+Source:    https://github.com/Ayan-Amir/ajaia
+
+Test accounts (no passwords — pick an account on the sign-in screen):
+  alice — owns two documents, one shared with bob
+  bob   — has edit access to alice's "Q3 Planning Notes"
+  carol — no documents; use to demonstrate the no-access path

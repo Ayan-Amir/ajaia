@@ -144,7 +144,9 @@ fastest way to diagnose a failed boot.
 
 ---
 
-## After deploying
+## Deployed
 
-Fill in the `[FILL IN]` placeholders in `SUBMISSION.md`: the live Vercel URL, the Railway
-API URL, the walkthrough video link, and the Drive folder link.
+Both services are live; see `SUBMISSION.md` for the current URLs.
+
+To redeploy, push to `main` — Railway and Vercel both build automatically from the
+connected repo.

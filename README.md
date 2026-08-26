@@ -5,6 +5,12 @@ timeboxed take-home assignment (see `ARCHITECTURE.md` for scope decisions).
 
 **Stack:** React (Vite + TypeScript) · Django + Django REST Framework · Postgres/SQLite · Tiptap
 
+| | |
+| --- | --- |
+| **Live app** | https://ajaia-tau.vercel.app |
+| **Source** | https://github.com/Ayan-Amir/ajaia |
+| **API** | https://ajaia-docs-api-production.up.railway.app |
+
 ---
 
 ## What works end to end
