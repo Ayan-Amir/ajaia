@@ -1,0 +1,10 @@
+Walkthrough video (3-5 min): [FILL IN — unlisted Loom or YouTube link]
+
+Suggested outline:
+  0:00  What it is + the seeded-account sign-in model
+  0:30  Create a document, rename it, apply formatting, show autosave
+  1:15  Import a .md file and show it become an editable document
+  1:45  Share with another user (view vs. edit), show the access list
+  2:15  Sign in as that user: shared-vs-owned split, read-only enforcement
+  3:00  What I deprioritized and why (real-time collab, version history)
+  3:45  How AI supported the work — including the 3 bugs browser testing caught

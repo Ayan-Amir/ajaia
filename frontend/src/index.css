@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Tailwind v4 resets interactive elements to `cursor: default`; restore the
+   pointer once here rather than repeating a utility on every control. */
+@layer base {
+  button:not(:disabled),
+  select:not(:disabled),
+  [role="button"]:not(:disabled),
+  label[for] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  select:disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* Tiptap renders the placeholder as a decoration on the first empty node. */
+.tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  color: var(--color-slate-400);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: ajaia-docs-api
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: python manage.py migrate --noinput && python manage.py seed_demo && gunicorn config.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: PYTHON_VERSION
+        value: "3.12.6"
+      # Set these in the Render dashboard after the frontend is deployed:
+      #   DATABASE_URL          -> Neon/Supabase Postgres connection string
+      #   ALLOWED_HOSTS         -> ajaia-docs-api.onrender.com
+      #   CORS_ALLOWED_ORIGINS  -> https://<your-vercel-app>.vercel.app
+      - key: DATABASE_URL
+        sync: false
+      - key: ALLOWED_HOSTS
+        sync: false
+      - key: CORS_ALLOWED_ORIGINS
+        sync: false
