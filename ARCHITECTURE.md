@@ -9,7 +9,7 @@ scoped to "coherent and usable" rather than complete.
 ## What I prioritized
 
 1. **A correct, tested permission model.** One `IsOwnerOrSharedWith` permission class
-   plus a per-user queryset, exercised by 22 tests covering every cell of the
+   plus a per-user queryset, exercised by 25 tests covering every cell of the
    owner/editor/viewer/no-access matrix.
 2. **An editing experience that feels normal.** Debounced autosave with a visible
    save indicator, inline rename, formatting that survives a refresh.

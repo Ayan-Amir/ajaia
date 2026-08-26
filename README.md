@@ -118,18 +118,18 @@ their existence.
 
 ## Deployment
 
-The app deploys as two services. Config files are included; you supply the accounts.
+The app deploys as two services plus a hosted database, all on free tiers:
+**Neon** (Postgres) → **Railway** (Django API) → **Vercel** (React frontend).
 
-1. **Database — [Neon](https://neon.tech) (free Postgres).** Create a project and copy the
-   connection string.
-2. **Backend — [Render](https://render.com) (free web service).** `render.yaml` is included.
-   Point it at this repo with root directory `backend`, then set `DATABASE_URL`,
-   `ALLOWED_HOSTS` (your Render hostname), and `CORS_ALLOWED_ORIGINS` (your Vercel URL).
-3. **Frontend — [Vercel](https://vercel.com) (free).** Root directory `frontend`; set
-   `VITE_API_URL` to the Render backend URL. `vercel.json` handles SPA routing.
+**See [DEPLOYMENT.md](DEPLOYMENT.md) for the full step-by-step guide**, including the
+exact environment variables and a troubleshooting table.
 
-Deploy the backend first so you know its URL, then the frontend, then update
-`CORS_ALLOWED_ORIGINS` on Render with the final Vercel URL.
+Short version: deploy in that order, because the backend needs the database URL and the
+frontend needs the backend URL — then set `CORS_ALLOWED_ORIGINS` on Railway to the final
+Vercel URL.
+
+Deployment config lives in `backend/railway.json` (build, migrate, seed, gunicorn) and
+`frontend/vercel.json` (SPA routing).
 
 ---
 

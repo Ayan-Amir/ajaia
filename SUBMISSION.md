@@ -8,8 +8,8 @@
 
 | Item | Link |
 | --- | --- |
-| Live product URL | **[FILL IN]** — Vercel frontend URL |
-| Backend API | **[FILL IN]** — Render URL (`/api/health/` should return `{"status": "ok"}`) |
+| Live product URL | https://ajaia-tau.vercel.app |
+| Backend API | https://ajaia-docs-api-production.up.railway.app |
 | Walkthrough video | **[FILL IN]** — unlisted Loom/YouTube link (also in `VIDEO.txt`) |
 | Google Drive folder | **[FILL IN]** — folder containing all of this |
 
@@ -37,7 +37,8 @@ window → confirm the document is read-only and the Share button is absent.
 | `SUBMISSION.md` | This file |
 | `backend/` | Django + DRF API, 25 automated tests |
 | `frontend/` | React + TypeScript + Tiptap client |
-| `render.yaml`, `frontend/vercel.json` | Deployment configuration |
+| `DEPLOYMENT.md` | Step-by-step Neon + Railway + Vercel deployment guide |
+| `backend/railway.json`, `frontend/vercel.json` | Deployment configuration |
 | `VIDEO.txt` | **[FILL IN]** walkthrough video URL |
 | `screenshots/` | Screenshots of the main flows |
 
